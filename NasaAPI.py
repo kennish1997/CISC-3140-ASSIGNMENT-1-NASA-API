@@ -19,16 +19,9 @@ myurl=decodeapod['hdurl']
 
 @app.route('/')
 def nasaapi():
-    return render_template('home.html',APOD= myurl)+ "<b>Title:</b>" + decodeapod['title'] + "<br>" +"<b>Date:</b>"  +decodeapod['date']+"<br>" "<b>Explanation:</b> " + "<br>" + decodeapod['explanation']
- 
-   # response = requests.get(myurl)
-    #img = Image.open(BytesIO(response.content))
-    #webbrowser.open(decodeapod['url'],new=0, autoraise=True)+from urllib.request import urlopen
-
+    return render_template('page.html',APOD= myurl)+ "<b>Title:</b>" + decodeapod['title'] + "<br>" +"<b>Date:</b>"  +decodeapod['date']+"<br>" "<b>Explanation:</b> " + "<br>" + decodeapod['explanation']
     
     
-
-
 app.run(debug=True)
 if __name__ == '__main__':
     app.run(debug=True)
