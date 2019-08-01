@@ -1,5 +1,5 @@
 language: python
-script: pytest
+script: nasaapi
 deploy:
   provider: gae
   keyfile: $GAE_KEY  # "YOUR SERVICE ACCOUNT JSON FILE"
