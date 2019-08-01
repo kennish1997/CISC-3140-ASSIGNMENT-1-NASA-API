@@ -1,4 +1,5 @@
 language: python
+script: pytest
 deploy:
   provider: gae
   keyfile: $GAE_KEY  # "YOUR SERVICE ACCOUNT JSON FILE"
